@@ -1,41 +1,108 @@
-body {
-    font-family: sans-serif;
-}
+@import "normalize.css";
+@import "grid.css";
+@import "fonts.css";
 
-.content {
-    background-color: rgb(26, 200, 243);
-    height: 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: rgb(65, 65, 65);
+:root {
+  /* color */
+  --app-bg-cl-lite: white;
+  --section-bg-cl-lite: white;
+  --primary-cl: #0abead;
+  --text-cl: #333333;
 }
-
-.header .content,
-.footer .content {
-    height: 6rem;
-}
-
 
 /* 
 
-- Colors
+reset style
 
 */
 
-.yellow {
-    background-color: #F3DD48;
+a {
+  text-decoration: none;
 }
 
-.violet {
-    background-color: #9068FF;
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-.pink {
-    background-color: #FF68CD;
+/* 
+
+App
+
+*/
+
+html {
+  font-size: 10px;
 }
 
-.green {
-    background-color: #3BF8D8;
+body {
+  font-family: "Poppins";
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* =========
+   header
+============
+*/
+.header {
+  background-color: var(--section-bg-cl-lite);
+  box-shadow: 0 0.5rem 4rem rgba(4, 195, 255, 0.16);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+.nav__logo {
+  color: var(--primary-cl);
+  font-family: "Poppins Black";
+  font-size: 6rem;
+  margin: 0;
+}
+.menu {
+  display: flex;
+}
+.menu__item {
+  margin-right: 4rem;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  display: inline-block;
+  color: var(--text-cl);
+  font-family: "Pippins Medium";
+}
+
+.menu__link--active {
+  color: var(--primary-cl);
+}
+
+.nav__toggle-icon {
+  display: none;
+}
+.nav__toggle-line {
+  position: relative;
+}
+.nav__toggle-line,
+.nav__toggle-line::before,
+.nav__toggle-line::after {
+  content: "";
+
+  background-color: var(--primary-cl);
+  width: 4.5rem;
+  height: 0.4rem;
+  border-radius: 2rem;
+}
+.nav__toggle-line::before {
+  position: absolute;
+  top: 1rem;
+}
+.nav__toggle-line::after {
+  position: absolute;
+  top: -1rem;
 }

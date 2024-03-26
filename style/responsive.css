@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .nav__logo {
+    font-size: 5rem;
+  }
+  .menu__item {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .nav__toggle-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+}
