@@ -15,7 +15,7 @@
     display: none;
   }
   .nav__toggle-icon {
-    display: block;
+    display: flex;
   }
 }
 

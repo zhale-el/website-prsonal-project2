@@ -84,6 +84,11 @@ body {
 
 .nav__toggle-icon {
   display: none;
+  width: 5rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .nav__toggle-line {
   position: relative;
@@ -92,17 +97,30 @@ body {
 .nav__toggle-line::before,
 .nav__toggle-line::after {
   content: "";
-
   background-color: var(--primary-cl);
   width: 4.5rem;
   height: 0.4rem;
   border-radius: 2rem;
+  transition: all 100ms ease-in;
 }
 .nav__toggle-line::before {
   position: absolute;
   top: 1rem;
+  transition: all 150ms ease-in;
 }
 .nav__toggle-line::after {
   position: absolute;
-  top: -1rem;
+  bottom: 1rem;
+  transition: all 150ms ease-in;
+}
+
+.nav__toggle-icon--open .nav__toggle-line::before {
+  transform: translateY(-1rem) rotate(-45deg);
+}
+.nav__toggle-icon--open .nav__toggle-line::after {
+  transform: translateY(1rem) rotate(45deg);
+}
+
+.nav__toggle-icon--open .nav__toggle-line {
+  background-color: transparent;
 }
