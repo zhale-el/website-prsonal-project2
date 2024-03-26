@@ -49,6 +49,10 @@ body {
 .header {
   background-color: var(--section-bg-cl-lite);
   box-shadow: 0 0.5rem 4rem rgba(4, 195, 255, 0.16);
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  left: 0;
 }
 .nav {
   display: flex;
@@ -64,6 +68,7 @@ body {
 }
 .menu {
   display: flex;
+  z-index: 100;
 }
 .menu__item {
   margin-right: 4rem;
@@ -75,7 +80,11 @@ body {
 .menu__link {
   display: inline-block;
   color: var(--text-cl);
-  font-family: "Pippins Medium";
+  font-family: "Poppins Medium";
+  transition: color 150ms ease-in;
+}
+.menu__link:hover {
+  color: var(--primary-cl);
 }
 
 .menu__link--active {
@@ -105,20 +114,20 @@ body {
 }
 .nav__toggle-line::before {
   position: absolute;
-  top: 1rem;
+  top: 1.2rem;
   transition: all 150ms ease-in;
 }
 .nav__toggle-line::after {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.2rem;
   transition: all 150ms ease-in;
 }
 
 .nav__toggle-icon--open .nav__toggle-line::before {
-  transform: translateY(-1rem) rotate(-45deg);
+  transform: translateY(-1.2rem) rotate(-45deg);
 }
 .nav__toggle-icon--open .nav__toggle-line::after {
-  transform: translateY(1rem) rotate(45deg);
+  transform: translateY(1.2rem) rotate(45deg);
 }
 
 .nav__toggle-icon--open .nav__toggle-line {
