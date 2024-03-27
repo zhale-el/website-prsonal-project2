@@ -28,6 +28,37 @@ ul {
 }
 
 /* 
+component
+*/
+
+.app-btn {
+  background-color: var(--primary-cl);
+  color: white;
+  font-family: "Poppins SemiBold";
+  width: 16rem;
+  height: 5rem;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1.5rem 4rem rgba(11, 190, 173, 0.4);
+  cursor: pointer;
+}
+.app-btn--orange {
+  background-color: var(--orange-cl);
+  box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 0.24);
+}
+
+/* 
+
+helper classes
+
+*/
+.align-items-center {
+  align-items: center;
+}
+
+/* 
 
 App
 
@@ -153,12 +184,13 @@ home
 ========================
 */
 .home {
+  margin-top: 8rem;
 }
 .home__content {
 }
 .home__name {
   color: var(--primary-cl);
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-family: "Poppins SemiBold";
   margin: 0;
 }
@@ -168,16 +200,31 @@ home
 
 .home__title {
   color: var(--primary-cl);
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "Poppins Bold";
   margin: 0;
 }
 .home__caption {
   margin-top: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.7;
 }
 .home__links-wrapper {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 .home__link {
 }
 .home__photo {
+  background-color: gray;
+  background-image: url("../assets/images/header-avatar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 100%;
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
+  border: 2.5rem solid white;
 }
