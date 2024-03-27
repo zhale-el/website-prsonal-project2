@@ -4,9 +4,10 @@
 
 :root {
   /* color */
-  --app-bg-cl-lite: white;
-  --section-bg-cl-lite: white;
+  --app-bg-cl: white;
+  --section-bg-cl: white;
   --primary-cl: #0abead;
+  --orange-cl: #f57f17;
   --text-cl: #333333;
 }
 
@@ -37,17 +38,20 @@ html {
 }
 
 body {
+  background-color: var(--app-bg-cl);
+  color: var(--text-cl);
   font-family: "Poppins";
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
-/* =========
+/* =====================
+
    header
-============
+========================
 */
 .header {
-  background-color: var(--section-bg-cl-lite);
+  background-color: var(--section-bg-cl);
   box-shadow: 0 0.5rem 4rem rgba(4, 195, 255, 0.16);
   z-index: 100;
   position: fixed;
@@ -132,4 +136,48 @@ body {
 
 .nav__toggle-icon--open .nav__toggle-line {
   background-color: transparent;
+}
+
+/* =====================
+
+main
+========================
+*/
+.main {
+  padding-top: 12rem;
+}
+
+/* =====================
+
+home
+========================
+*/
+.home {
+}
+.home__content {
+}
+.home__name {
+  color: var(--primary-cl);
+  font-size: 2.2rem;
+  font-family: "Poppins SemiBold";
+  margin: 0;
+}
+.home__name span {
+  color: var(--orange-cl);
+}
+
+.home__title {
+  color: var(--primary-cl);
+  font-size: 4rem;
+  font-family: "Poppins Bold";
+  margin: 0;
+}
+.home__caption {
+  margin-top: 1rem;
+}
+.home__links-wrapper {
+}
+.home__link {
+}
+.home__photo {
 }
