@@ -10,6 +10,9 @@
     width: 38rem;
     height: 38rem;
   }
+  .home {
+    height: 83vh;
+  }
 }
 
 @media (max-width: 992px) {
@@ -31,7 +34,8 @@
     margin: 0 auto;
   }
   .home {
-    margin-top: 5rem;
+    margin-top: 3.5rem;
+    background-image: none;
   }
   .home .row {
     flex-direction: column-reverse;
@@ -88,6 +92,9 @@
   .home {
     margin-top: 3rem;
   }
+  .home__photo {
+    border-width: 1.5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -105,7 +112,7 @@
   .home__photo {
     width: 25rem;
     height: 25rem;
-    border-width: 1.5rem;
+    border-width: 1rem;
   }
   .home__links-wrapper {
     gap: 2rem;
@@ -116,7 +123,4 @@
   }
 }
 @media (max-width: 350px) {
-  .home__photo {
-    width: 100%;
-  }
 }
