@@ -49,6 +49,26 @@ component
   box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 0.24);
 }
 
+.section-head {
+  text-align: center;
+}
+.section-head-title {
+  color: var(--primary-cl);
+  font-family: "Poppins Bold";
+  font-size: 4.5rem;
+  margin: 0;
+}
+.section-head-caption {
+  color: var(--text-cl);
+  margin: 1rem 0;
+}
+.section-head-line {
+  background-color: var(--primary-cl);
+  display: block;
+  width: 15rem;
+  height: 0.4rem;
+}
+
 /* 
 
 helper classes
@@ -176,9 +196,6 @@ body {
 main
 ========================
 */
-.main {
-  /* padding-top: 12rem; */
-}
 
 /* =====================
 
@@ -192,8 +209,7 @@ home
   background-position: bottom;
   height: 89vh;
 }
-.home__content {
-}
+
 .home__name {
   color: var(--primary-cl);
   font-size: 2.8rem;
@@ -220,8 +236,7 @@ home
   gap: 3rem;
   flex-wrap: wrap;
 }
-.home__link {
-}
+
 .home__photo {
   background-color: gray;
   background-image: url("../assets/images/header-avatar.jpg");
