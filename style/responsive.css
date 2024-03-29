@@ -13,6 +13,10 @@
   .home {
     height: 83vh;
   }
+  .about__cover,
+  .about__image {
+    flex-basis: 50%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -36,9 +40,17 @@
   .home {
     margin-top: 3.5rem;
     background-image: none;
+    height: auto;
   }
   .home .row {
     flex-direction: column-reverse;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about__cover,
+  .about__image {
+    flex-basis: auto;
   }
 }
 
@@ -95,6 +107,9 @@
   .home__photo {
     border-width: 1.5rem;
   }
+  .about__content {
+    padding: 2rem 4rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -104,7 +119,11 @@
   .home__name {
     font-size: 2rem;
   }
+  .about__link {
+    width: 100%;
+  }
 }
+
 @media (max-width: 410px) {
   .home__title {
     font-size: 3rem;
@@ -115,7 +134,6 @@
     border-width: 1rem;
   }
   .home__links-wrapper {
-    gap: 2rem;
     width: 100%;
   }
   .home__link {

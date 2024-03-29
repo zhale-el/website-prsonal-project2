@@ -51,7 +51,7 @@ component
 
 .section-head {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 .section-head-title {
   color: var(--primary-cl);
@@ -63,11 +63,12 @@ component
   color: var(--text-cl);
   margin: 0.5rem 0 2rem 0;
   opacity: 0.7;
+  letter-spacing: 0.25rem;
 }
 .section-head-line {
   background-color: var(--primary-cl);
   display: block;
-  width: 19rem;
+  width: 20rem;
   height: 0.2rem;
   margin: 0 auto;
   position: relative;
@@ -304,7 +305,7 @@ home section
 }
 .about__description {
   margin-top: 0;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 .about__list-title {
@@ -343,4 +344,6 @@ home section
 .about__links-wrapper {
   display: flex;
   gap: 3rem;
+  flex-wrap: wrap;
+  width: 100%;
 }
