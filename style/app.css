@@ -282,7 +282,6 @@ home section
   background-color: var(--section-bg-cl);
   display: flex;
   box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
-  margin-bottom: 10rem;
   min-height: 60rem;
 }
 .about__cover {
@@ -346,4 +345,58 @@ home section
   gap: 3rem;
   flex-wrap: wrap;
   width: 100%;
+}
+
+/* =====================
+
+services section
+========================
+*/
+.services {
+  margin-top: 20rem;
+}
+.service {
+  color: white;
+  height: 100%;
+  text-align: center;
+  padding: 7rem 3rem;
+  position: relative;
+  z-index: 6;
+}
+.service--purple {
+  background-color: #8540ff;
+}
+.service--yellow {
+  background-color: #ffc50c;
+}
+.service--pink {
+  background-color: #ec407a;
+}
+.service--orange {
+  background-color: #ff6331;
+}
+.service--blue {
+  background-color: #13b6ff;
+}
+.service--green {
+  background-color: #49af46;
+}
+
+.service__icon {
+}
+.service__title {
+  font-size: 2.4rem;
+  font-family: "Poppins Bold";
+  margin-top: 1.6rem;
+  margin-bottom: 0;
+}
+.service__caption {
+  margin-bottom: 0;
+}
+.service__wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
 }
