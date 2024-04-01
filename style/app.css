@@ -457,6 +457,7 @@ resume section
   content: "";
   background-color: var(--primary-cl);
   width: 5.4rem;
+  max-width: 26rem;
   position: absolute;
   left: 0;
   top: 0;
@@ -473,7 +474,6 @@ resume section
   color: white;
 }
 .resume-list__item--active::before {
-  max-width: 26rem;
   width: 100%;
 }
 .resume-list__icon {
