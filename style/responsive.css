@@ -26,6 +26,9 @@
   .service {
     padding: 5rem 2rem;
   }
+  .resume-list {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -60,6 +63,38 @@
   .about__cover,
   .about__image {
     flex-basis: auto;
+  }
+  .resume-list::before,
+  .resume-content__title::before,
+  .resume-list__item::before {
+    content: none;
+  }
+  .resume-list__icon {
+    display: none;
+  }
+  .resume-list {
+    background-color: transparent;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: auto;
+    box-shadow: none;
+  }
+  .resume-list__item {
+    background-color: var(--primary-cl);
+    border-radius: 4rem;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+  }
+  .resume-list__text {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .resume-content {
+    border-left: none;
+    padding-left: 1rem;
   }
 }
 

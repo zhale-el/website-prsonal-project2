@@ -433,7 +433,7 @@ resume section
   flex-direction: column;
   justify-content: center;
   z-index: 6;
-  min-height: 36rem;
+  min-height: 40rem;
   margin-right: 3rem;
 }
 .resume-list::before {
@@ -448,7 +448,7 @@ resume section
 }
 
 .resume-list__item {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -504,9 +504,10 @@ resume section
   transition: all 0.2s ease-in;
 }
 .resume-content--show {
-  height: auto;
+  height: 100%;
   overflow: visible;
   opacity: 1;
+  min-height: 40rem;
 }
 .resume-content__item {
   margin-bottom: 2rem;
