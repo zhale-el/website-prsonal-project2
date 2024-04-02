@@ -14,6 +14,13 @@ resumeListItems.forEach((resumeListItem) => {
     document
       .querySelector(".resume-list__item--active")
       .classList.remove("resume-list__item--active");
+
+    document
+      .querySelector(".resume-content--show")
+      .classList.remove("resume-content--show");
     this.classList.add("resume-list__item--active");
+
+    let contentId = this.getAttribute("data-content-id");
+    document.querySelector(contentId).classList.add("resume-content--show");
   });
 });

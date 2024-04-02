@@ -422,7 +422,7 @@ resume section
   margin-top: 20rem;
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
   margin-bottom: 10rem;
-  padding: 10rem 0;
+  padding: 8rem 0;
   transform: skewY(-6deg);
 }
 .resume-list {
@@ -433,6 +433,8 @@ resume section
   flex-direction: column;
   justify-content: center;
   z-index: 6;
+  min-height: 36rem;
+  margin-right: 3rem;
 }
 .resume-list::before {
   content: "";
@@ -446,18 +448,18 @@ resume section
 }
 
 .resume-list__item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0.8rem 0;
+  padding: 1rem 0;
   cursor: pointer;
 }
 .resume-list__item::before {
   content: "";
   background-color: var(--primary-cl);
   width: 5.4rem;
-  max-width: 26rem;
+  max-width: 27rem;
   position: absolute;
   left: 0;
   top: 0;
@@ -494,18 +496,61 @@ resume section
 
 */
 .resume-content {
+  border-left: 0.2rem solid var(--primary-cl);
+  padding-left: 3rem;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
 }
 .resume-content--show {
+  height: auto;
+  overflow: visible;
+  opacity: 1;
 }
 .resume-content__item {
+  margin-bottom: 2rem;
+}
+.resume-content__item:last-child {
+  margin-bottom: 0;
 }
 .resume-content__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .resume-content__title {
+  color: var(--orange-cl);
+  font-family: "Poppins SemiBold";
+  font-size: 1.8rem;
+  margin: 0;
+  position: relative;
 }
+.resume-content__title::before {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-cl);
+  top: 0;
+  left: -4rem;
+  bottom: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 100%;
+  margin: auto;
+}
+
 .resume-content__date {
+  background-color: var(--orange-cl);
+  color: white;
+  border-radius: 2rem;
+  padding: 0.2rem 1.5rem;
+  box-shadow: 0 0 4rem rgba(245, 127, 23, 0.3);
 }
-.resume-content_subtitle {
+.resume-content__subtitle {
+  font-family: "Poppins SemiBold";
+  font-size: 1.6rem;
+  margin: 1rem 0;
 }
 .resume-content__description {
+  margin: 0;
 }
