@@ -7,6 +7,7 @@
     <link rel="icon" href="./assets/images/app-logo.png" />
     <link rel="stylesheet" href="./style/app.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- header -->
@@ -543,7 +544,7 @@
                     <span class="resume-content__date">2018-2014</span>
                   </div>
 
-                  <h6 class="resume-content_subtitle">
+                  <h6 class="resume-content__subtitle">
                     B.sc in Computer Engineer
                   </h6>
 
@@ -559,7 +560,7 @@
                     <span class="resume-content__date">2018-2014</span>
                   </div>
 
-                  <h6 class="resume-content_subtitle">
+                  <h6 class="resume-content__subtitle">
                     B.sc in Computer Engineer
                   </h6>
 
@@ -578,7 +579,7 @@
                     <span class="resume-content__date">2018-2014</span>
                   </div>
 
-                  <h6 class="resume-content_subtitle">
+                  <h6 class="resume-content__subtitle">
                     B.sc in Computer Engineer
                   </h6>
 
@@ -594,7 +595,7 @@
                     <span class="resume-content__date">2018-2014</span>
                   </div>
 
-                  <h6 class="resume-content_subtitle">
+                  <h6 class="resume-content__subtitle">
                     B.sc in Computer Engineer
                   </h6>
 
@@ -610,7 +611,7 @@
                     <span class="resume-content__date">2018-2014</span>
                   </div>
 
-                  <h6 class="resume-content_subtitle">
+                  <h6 class="resume-content__subtitle">
                     B.sc in Computer Engineer
                   </h6>
 
@@ -629,7 +630,7 @@
                     <span class="resume-content__date">2018-2014</span>
                   </div>
 
-                  <h6 class="resume-content_subtitle">
+                  <h6 class="resume-content__subtitle">
                     B.sc in Computer Engineer
                   </h6>
 
@@ -645,7 +646,7 @@
                     <span class="resume-content__date">2018-2014</span>
                   </div>
 
-                  <h6 class="resume-content_subtitle">
+                  <h6 class="resume-content__subtitle">
                     B.sc in Computer Engineer
                   </h6>
 
@@ -655,6 +656,62 @@
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section portfolio -->
+      <section class="portfolio">
+        <div class="container">
+          <div class="section-head">
+            <h3 class="section-head-title">Portfolio</h3>
+            <p class="section-head-caption">Check in Our Latest Work</p>
+            <span class="section-head-line"></span>
+          </div>
+
+          <ul class="portfolio-list">
+            <li class="portfolio-list__item portfolio-list__item--active">
+              All Work
+            </li>
+            <li class="portfolio-list__item">Illustration</li>
+            <li class="portfolio-list__item">Animation</li>
+            <li class="portfolio-list__item">App UI</li>
+            <li class="portfolio-list__item">Web UI</li>
+            <li class="portfolio-list__item">Social Media</li>
+            <li class="portfolio-list__item">Print Design</li>
+          </ul>
+
+          <div class="portfolio-content">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/portfolio-1.jpg"
+                    alt="Portfolio image"
+                    class="portfolio-content__image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/portfolio-2.jpg"
+                    alt="Portfolio image"
+                    class="portfolio-content__image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/portfolio-3.jpg"
+                    alt="Portfolio image"
+                    class="portfolio-content__image"
+                  />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -670,5 +727,14 @@
     <footer></footer>
 
     <script src="./script/script.js"></script>
+    <script src="./script/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      const swiper = new Swiper(".swiper", {
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
