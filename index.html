@@ -709,6 +709,20 @@
                     class="portfolio-content__image"
                   />
                 </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/portfolio-3.jpg"
+                    alt="Portfolio image"
+                    class="portfolio-content__image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/portfolio-3.jpg"
+                    alt="Portfolio image"
+                    class="portfolio-content__image"
+                  />
+                </div>
               </div>
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
@@ -733,6 +747,15 @@
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
+        },
+        spaceBetween: 40,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
         },
       });
     </script>
