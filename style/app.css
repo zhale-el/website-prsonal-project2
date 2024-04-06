@@ -580,6 +580,16 @@ portfolio section
   background-color: var(--primary-cl);
   color: white;
 }
+.portfolio-content {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.portfolio-content--active {
+  height: auto;
+  opacity: 1;
+}
 
 .portfolio-content__image {
   width: 100%;
