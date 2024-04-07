@@ -10,36 +10,36 @@ navToggleIcon.addEventListener("click", function () {
   cover.classList.toggle("cover--show");
 });
 
-resumeListItems.forEach((resumeListItem) => {
-  resumeListItem.addEventListener("click", function () {
-    document
-      .querySelector(".resume-list__item--active")
-      .classList.remove("resume-list__item--active");
+function navigationTabsInit(
+  listItems,
+  listItemActiveClass,
+  contentItemShowClass
+) {
+  listItems.forEach((listItem) => {
+    listItem.addEventListener("click", function () {
+      document
+        .querySelector(`.${listItemActiveClass}`)
+        .classList.remove(listItemActiveClass);
 
-    document
-      .querySelector(".resume-content--show")
-      .classList.remove("resume-content--show");
-    this.classList.add("resume-list__item--active");
+      document
+        .querySelector(`.${contentItemShowClass}`)
+        .classList.remove(contentItemShowClass);
+      this.classList.add(listItemActiveClass);
 
-    let contentId = this.getAttribute("data-content-id");
-    document.querySelector(contentId).classList.add("resume-content--show");
+      let contentId = this.getAttribute("data-content-id");
+      document.querySelector(contentId).classList.add(contentItemShowClass);
+    });
   });
-});
+}
 
-portfolioListItems.forEach((portfolioList) => {
-  portfolioList.addEventListener("click", function () {
-    document
-      .querySelector(".portfolio-list__item--active")
-      .classList.remove("portfolio-list__item--active");
+navigationTabsInit(
+  resumeListItems,
+  "resume-list__item--active",
+  "resume-content--show"
+);
 
-    document
-      .querySelector(".portfolio-content--active")
-      .classList.remove("portfolio-content--active");
-    this.classList.add("portfolio-list__item--active");
-
-    let contentId = this.getAttribute("data-content-id");
-    document
-      .querySelector(contentId)
-      .classList.add("portfolio-content--active");
-  });
-});
+navigationTabsInit(
+  portfolioListItems,
+  "portfolio-list__item--active",
+  "portfolio-content--active"
+);

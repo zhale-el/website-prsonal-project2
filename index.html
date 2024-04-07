@@ -833,8 +833,7 @@
     <script src="./script/script.js"></script>
     <script src="./script/swiper-bundle.min.js"></script>
     <script type="text/javascript">
-      const swiper1 = new Swiper(".swiper1", {
-        // If we need pagination
+      const swiperOptions = {
         pagination: {
           el: ".swiper-pagination",
         },
@@ -847,39 +846,11 @@
             slidesPerView: 3,
           },
         },
-      });
+      };
 
-      const swiper2 = new Swiper(".swiper2", {
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        spaceBetween: 40,
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-          },
-          1200: {
-            slidesPerView: 3,
-          },
-        },
-      });
-
-      const swiper3 = new Swiper(".swiper3", {
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        spaceBetween: 40,
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-          },
-          1200: {
-            slidesPerView: 3,
-          },
-        },
-      });
+      const swiper1 = new Swiper(".swiper1", swiperOptions);
+      const swiper2 = new Swiper(".swiper2", swiperOptions);
+      const swiper3 = new Swiper(".swiper3", swiperOptions);
     </script>
   </body>
 </html>
