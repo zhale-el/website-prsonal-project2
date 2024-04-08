@@ -704,3 +704,65 @@ color
   background-color: #ec407a;
   box-shadow: 0 1.5rem 4rem rgba(245, 39, 108, 0.24);
 }
+
+/* =====================
+
+contact section
+========================
+*/
+.contact-us {
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+}
+.contact-us__wrapper {
+  background-image: url("../assets/images/map.jpg");
+  background-size: cover;
+  height: 60rem;
+}
+
+/* 
+
+left
+*/
+
+.contact-us__map {
+}
+.contact-us__map--icon {
+}
+
+/* 
+
+right
+
+*/
+.contact {
+  background-color: var(--app-bg-cl);
+  box-shadow: 0 0 4rem rgba(19, 182, 255, 0.24);
+  max-width: 50rem;
+  height: 100%;
+  padding: 5rem 4rem;
+  margin-left: auto;
+}
+.contact__title {
+  color: var(--primary-cl);
+  font-family: "Poppins Bold";
+  font-size: 3.2rem;
+  margin: 0;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.contact__input {
+  border: none;
+  outline: none;
+  padding: 1.4rem 2.5rem;
+  box-shadow: 0 0 5rem rgba(96, 233, 255, 0.27);
+  border-radius: 1rem;
+}
+.contact__input--textarea {
+}
+.contact__submit {
+}
