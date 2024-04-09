@@ -712,12 +712,12 @@ contact section
 */
 .contact-us {
   margin-top: 20rem;
-  margin-bottom: 10rem;
 }
 .contact-us__wrapper {
   background-image: url("../assets/images/map.jpg");
   background-size: cover;
-  height: 60rem;
+  height: 78rem;
+  padding: 5rem 0;
 }
 
 /* 
@@ -726,8 +726,20 @@ left
 */
 
 .contact-us__map {
+  background-color: var(--app-bg-cl);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: 20%;
 }
 .contact-us__map--icon {
+  width: 2rem;
 }
 
 /* 
@@ -738,9 +750,8 @@ right
 .contact {
   background-color: var(--app-bg-cl);
   box-shadow: 0 0 4rem rgba(19, 182, 255, 0.24);
-  max-width: 50rem;
-  height: 100%;
-  padding: 5rem 4rem;
+  max-width: 55rem;
+  padding: 4.5rem;
   margin-left: auto;
 }
 .contact__title {
@@ -756,13 +767,30 @@ right
   margin-top: 2rem;
 }
 .contact__input {
+  color: var(--text-cl);
   border: none;
   outline: none;
-  padding: 1.4rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   box-shadow: 0 0 5rem rgba(96, 233, 255, 0.27);
   border-radius: 1rem;
 }
+.contact__input::placeholder {
+  color: var(--text-cl);
+}
+
 .contact__input--textarea {
+  resize: vertical;
+  max-height: 18rem;
+  min-height: 8rem;
 }
 .contact__submit {
+  background-color: var(--primary-cl);
+  color: white;
+  font-family: "Poppins SemiBold";
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  padding: 1.5rem;
+  border-radius: 5rem;
+  cursor: pointer;
 }

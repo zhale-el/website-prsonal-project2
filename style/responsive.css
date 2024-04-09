@@ -96,6 +96,13 @@
     border-left: none;
     padding-left: 1rem;
   }
+
+  .contact-us__map {
+    display: none;
+  }
+  .contact {
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -177,6 +184,9 @@
   }
   .service {
     padding: 5rem 2rem;
+  }
+  .contact {
+    padding: 4.5rem 2rem;
   }
 }
 
