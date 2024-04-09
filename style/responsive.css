@@ -103,6 +103,9 @@
   .contact {
     margin-right: auto;
   }
+  .footer__copy-right {
+    letter-spacing: 0.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -187,6 +190,9 @@
   }
   .contact {
     padding: 4.5rem 2rem;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
   }
 }
 

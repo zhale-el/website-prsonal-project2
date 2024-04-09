@@ -652,8 +652,6 @@ head
   display: block;
   margin-bottom: 0.5rem;
 }
-.package__filter {
-}
 
 /* 
 
@@ -793,4 +791,49 @@ right
   padding: 1.5rem;
   border-radius: 5rem;
   cursor: pointer;
+}
+
+/* =====================
+
+footer
+========================
+*/
+
+.footer {
+  background-color: var(--app-bg-cl);
+  padding: 2rem 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__copy-right {
+  color: var(--text-cl);
+  font-family: "Poppins SemiBold";
+  letter-spacing: 0.3rem;
+}
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+.footer__social {
+  background-color: #1f2935;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social:hover {
+  background-color: var(--primary-cl);
+}
+
+.footer__social svg {
+  fill: var(--app-bg-cl);
+  width: 3rem;
+  height: 3rem;
 }
