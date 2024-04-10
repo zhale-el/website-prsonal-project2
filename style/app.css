@@ -360,7 +360,7 @@ services section
 ========================
 */
 .services {
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .service {
   color: white;
@@ -372,21 +372,27 @@ services section
 }
 .service--purple {
   background-color: #8540ff;
+  box-shadow: 0 0 4rem rgba(118, 13, 255, 0.35);
 }
 .service--yellow {
   background-color: #ffc50c;
+  box-shadow: 0 0 4rem rgba(255, 197, 12, 0.35);
 }
 .service--pink {
   background-color: #ec407a;
+  box-shadow: 0 0 4rem rgba(236, 64, 122, 0.35);
 }
 .service--orange {
   background-color: #ff6331;
+  box-shadow: 0 0 4rem rgba(255, 99, 49, 0.35);
 }
 .service--blue {
   background-color: #13b6ff;
+  box-shadow: 0 0 4rem rgba(19, 182, 255, 35%);
 }
 .service--green {
   background-color: #49af46;
+  box-shadow: 0 0 4rem rgba(73, 175, 70, 35%);
 }
 .service__title {
   font-size: 2.4rem;
@@ -419,7 +425,7 @@ resume section
 
 .resume {
   background-color: var(--section-bg-cl);
-  margin-top: 20rem;
+  margin-top: 8rem;
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
   padding: 8rem 0;
   transform: skewY(-6deg);
@@ -561,7 +567,7 @@ portfolio section
 ========================
 */
 .portfolio {
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .portfolio-list {
   display: flex;
@@ -569,6 +575,7 @@ portfolio section
   justify-content: center;
   margin-bottom: 4rem;
   flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .portfolio-list__item {
   padding: 1.2rem 3rem;
@@ -618,7 +625,7 @@ pricing section
 
 .pricing {
   background-color: var(--section-bg-cl);
-  margin-top: 20rem;
+  margin-top: 8rem;
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
   padding: 8rem 0 14rem 0;
   transform: skewY(-6deg);
@@ -709,7 +716,7 @@ contact section
 ========================
 */
 .contact-us {
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .contact-us__wrapper {
   background-image: url("../assets/images/map.jpg");
