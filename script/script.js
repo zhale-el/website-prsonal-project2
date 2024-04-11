@@ -4,6 +4,7 @@ const cover = document.querySelector(".cover");
 const resumeListItems = document.querySelectorAll(".resume-list__item");
 const portfolioListItems = document.querySelectorAll(".portfolio-list__item");
 const menuItems = document.querySelectorAll(".menu__item");
+const sections = document.querySelectorAll("main > section");
 
 navToggleIcon.addEventListener("click", function () {
   this.classList.toggle("nav__toggle-icon--open");
@@ -29,8 +30,10 @@ function navigationTabsInit(
   });
 }
 
-function removeActiveClass(className) {
-  document.querySelector(`.${className}`).classList.remove(className);
+function removeActiveClass(classNameActive) {
+  document
+    .querySelector(`.${classNameActive}`)
+    .classList.remove(classNameActive);
 }
 
 navigationTabsInit(
@@ -44,6 +47,28 @@ navigationTabsInit(
   "portfolio-list__item--active",
   "portfolio-content--active"
 );
+
+const observer = new IntersectionObserver(observerHandler, {
+  threshold: 0.36,
+});
+
+function observerHandler(allsections) {
+  allsections.map((section) => {
+    let sectionClassName = section.target.className;
+    let sectionMenuItem = document.querySelector(
+      `.menu__item[data-section=${sectionClassName}]`
+    );
+    if (section.isIntersecting) {
+      sectionMenuItem.classList.add("menu__item--active");
+    } else {
+      sectionMenuItem.classList.remove("menu__item--active");
+    }
+  });
+}
+
+sections.forEach((section) => {
+  observer.observe(section);
+});
 
 menuItems.forEach((item) => {
   item.addEventListener("click", function (event) {
