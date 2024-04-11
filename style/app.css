@@ -98,7 +98,7 @@ helper classes
 }
 
 .skew-reset {
-  transform: skewY(6deg);
+  transform: translateZ(0) skewY(6deg);
 }
 
 .h-full {
@@ -153,24 +153,26 @@ body {
   display: flex;
   z-index: 100;
 }
+
 .menu__item {
   margin-right: 4rem;
 }
+
 .menu__item:last-child {
   margin-right: 0;
 }
 
+.menu__item--active {
+  color: var(--primary-cl);
+}
+
 .menu__link {
   display: inline-block;
-  color: var(--text-cl);
+  color: inherit;
   font-family: "Poppins Medium";
   transition: color 150ms ease-in;
 }
 .menu__link:hover {
-  color: var(--primary-cl);
-}
-
-.menu__link--active {
   color: var(--primary-cl);
 }
 
@@ -233,7 +235,7 @@ home section
   background-image: url("../assets/images/shapes/header-shape.svg");
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 89vh;
+  height: 85vh;
 }
 
 .home__name {
@@ -428,7 +430,7 @@ resume section
   margin-top: 8rem;
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
   padding: 8rem 0;
-  transform: skewY(-6deg);
+  transform: translateZ(0) skewY(-6deg);
 }
 .resume-list {
   background-color: var(--app-bg-cl);
@@ -628,7 +630,7 @@ pricing section
   margin-top: 8rem;
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
   padding: 8rem 0 14rem 0;
-  transform: skewY(-6deg);
+  transform: translateZ(0) skewY(-6deg);
 }
 .package {
   box-shadow: 0 0 5rem rgba(96, 233, 255, 0.27);
