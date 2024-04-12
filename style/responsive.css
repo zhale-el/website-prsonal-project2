@@ -4,13 +4,6 @@
   }
 }
 
-@media (max-width: 1400px) {
-  .home__photo {
-    width: 45rem;
-    height: 45rem;
-  }
-}
-
 @media (max-width: 1200px) {
   .home__photo {
     width: 38rem;
