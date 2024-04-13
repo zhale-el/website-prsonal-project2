@@ -23,7 +23,8 @@
 :root.dark-theme .about,
 :root.dark-theme .resume,
 :root.dark-theme .resume-list,
-:root.dark-theme .pricing {
+:root.dark-theme .pricing,
+:root.dark-theme .package {
   box-shadow: none;
 }
 :root.dark-theme .home {
@@ -688,6 +689,7 @@ body
 
 */
 .package__body {
+  background-color: var(--app-bg-cl);
   padding: 3rem 0;
 }
 .package-options {
@@ -775,7 +777,7 @@ right
 
 */
 .contact {
-  background-color: var(--app-bg-cl);
+  background-color: var(--section-bg-cl);
   box-shadow: 0 0 4rem rgba(19, 182, 255, 0.24);
   max-width: 55rem;
   padding: 4.5rem;
@@ -794,6 +796,7 @@ right
   margin-top: 2rem;
 }
 .contact__input {
+  background-color: var(--app-bg-cl);
   color: var(--text-cl);
   border: none;
   outline: none;
@@ -868,4 +871,8 @@ footer
   fill: var(--app-bg-cl);
   width: 3rem;
   height: 3rem;
+}
+
+.change-theme svg {
+  fill: white;
 }
